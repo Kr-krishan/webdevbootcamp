@@ -1,0 +1,32 @@
+<!-- <link rel="stylesheet" href="/app.css"> -->
+
+<!-- <style>
+	body{
+		color:purple;
+	}
+</style> -->
+
+<!-- include header partial -->
+<%- include("partials/header") %>
+
+<h1>
+<!-- sending var in ejs from render	 -->
+	You fell in love with : <%= thingVar.toUpperCase() %>
+</h1>
+
+<% if(thingVar.toLowerCase()==="rusty"){ %>
+	<p>
+		Good Choice
+	</p>
+<% }else{ %>
+	<p>
+		what were u thinking?
+	</p>
+<%} %>
+
+<p>
+	I know right !!!
+</p>
+
+<!-- include footer partial -->
+<%- include("partials/footer") %>

@@ -1,0 +1,28 @@
+<!-- internal css -->
+
+<!-- <style>
+	body{
+		color:purple;
+	}
+</style> -->
+
+<!-- external css -->
+<!-- <link rel="stylesheet" href="/app.css"> -->
+
+<!-- include header partial -->
+<%- include("partials/header") %>
+
+<h1>
+	View the posts Here
+</h1>
+
+
+<% posts.forEach(function(post){ %>
+	<li> 
+		<%= post.title %> -  <strong><%= post.author%></strong>
+	</li>
+<% }) %>
+
+
+<!-- include footer partial -->
+<%- include("partials/footer") %>
